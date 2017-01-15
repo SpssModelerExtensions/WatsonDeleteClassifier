@@ -3,7 +3,7 @@
 This set of extensions enables you to delete your own custom classifiers.
 
 <p align="center">
-  <img src="wvr.png"/ width=300px>
+  <img src="wvr2.png"/ width=300px>
 </p>
 
 serice demo:
