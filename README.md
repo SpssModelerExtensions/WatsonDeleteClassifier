@@ -1,12 +1,12 @@
 # Delete your custom image classifier for Watson Visual Recognition service
 
-This set of extensions enables you to delete your own custom classifiers.
+This extensions enables you to delete your custom classifiers.
 
 <p align="center">
   <img src="wvr2.png"/ width=300px>
 </p>
 
-serice demo:
+service demo:
 https://visual-recognition-demo.mybluemix.net/train
 
 # Before you start
@@ -29,8 +29,8 @@ https://visual-recognition-demo.mybluemix.net/train
 	
 
 4. SPSS Modeler and R requirements:
-	- SPSS Modeler v18.0
-	- SPSS Modeler 'R essentials' plugin
+	- [SPSS Modeler v18.0][4]
+	- [SPSS Modeler 'R essentials' plugin][3]
 	- R packages: 
 		- httr
 		- RJSONIO
@@ -40,26 +40,25 @@ https://visual-recognition-demo.mybluemix.net/train
 
 
 # Example usage
-## Deleting classifiers
 
 Example stream
 
 <p align="center">
-  <img src="Screenshot/stream.PNG"/ width=300px>
+  <img src="Screenshot/stream.PNG"/ width=600px>
 </p>
 
 
-WatsonCreateClassifier node requires a connected source with your 'api_key' for bluemix services. 
+WatsonDeleteClassifier node requires a connected source with your 'api_key' for bluemix services. 
 
 <p align="center">
-  <img src="Screenshot/input1.PNG"/ width=300px>
+  <img src="Screenshot/input1.PNG"/ width=600px>
 </p>
 
-	
-In the main node window coose your 'api_key' in the 'Watson Api Key' field. Next provide 'Name', 'Class Name' and choose files that contain examples representing your 'Class Name' and some examples representing their opposites.
+In the WatsonDeleteClassifier's main window provide the id of the classifier and connect the 'api_key' from the 'user input' node.
+
 
 <p align="center">
-  <img src="Screenshot/input2.PNG"/ width=300px>
+  <img src="Screenshot/input2.PNG"/ width=600px>
 </p>
 	
 	
@@ -69,7 +68,7 @@ The generated output will inform you whether the operation was successful.
 
 
 <p align="center">
-  <img src="Screenshot/output.PNG"/ width=500px>
+  <img src="Screenshot/output.PNG"/ width=600px>
 </p>
 
 You can train new classifiers with ['WatsonCreateClassifier'][2] extension!
@@ -84,3 +83,5 @@ You can train new classifiers with ['WatsonCreateClassifier'][2] extension!
 
  [1]: http://www.apache.org/licenses/LICENSE-2.0.html
  [2]: https://github.com/SpssModelerExtensions/WatsonCreateClassifier
+  [3]: http://www.ibm.com/support/knowledgecenter/SS3RA7_18.0.0/modeler_r_plugin_install_project_ddita/clementine/programmability_option/r_essentials_install.html
+ [4]: http://www-03.ibm.com/software/products/en/spss-modeler
